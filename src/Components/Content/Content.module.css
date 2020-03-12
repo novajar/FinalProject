@@ -1,0 +1,13 @@
+.Section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+
+}
+
+.gambar {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}

@@ -1,0 +1,10 @@
+.Section {
+    background-color: aqua;
+    display: flex;
+    padding: 10px 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 1000;
+    color: gray;
+}

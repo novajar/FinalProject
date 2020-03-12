@@ -1,0 +1,151 @@
+.card {
+  width: 90%;
+  padding: 10px 10px;
+  margin: 10px auto;
+  /* background-color: white; */
+  background-image: none;
+  text-align: center;
+  color: black;
+  font-family: roboto;
+}
+
+/* start css home */
+.jumbo {
+  display: block;
+  width: 100%;
+  padding-top: 120px;
+  /* background-color: blueviolet; */
+  /* font-size: 50px; */
+  /* font-weight: bold; */
+  color: white;
+  height: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  /* background-image: url('../../uploads/image/bg2.jpg'); */
+  background-image: url('../../uploads/image/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thematic {
+  background-image: none;
+  text-align: center;
+  width: 90%;
+}
+
+.thematic p {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  width: 45%;
+  margin: auto;
+}
+
+.thematic h1 {
+  color: grey;
+  font-size: large;
+  font-weight: normal;
+}
+
+.bawah {
+  background-image: url('../../uploads/image/bg4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 250px;
+  /* line-height: 160px; */
+  width: 250px;
+}
+
+.ant-carousel .slick-slide span {
+  background-image: url('https://source.unsplash.com/vLq1GWZzQNk');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  /* filter: blur(1px); */
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 250px;
+  padding-top: 25px;
+}
+
+.ant-carousel .slick-slide p {
+  width: 50%;
+  height: 250px;
+  text-align: center;
+  line-height: 1;
+  margin: auto;
+  padding: 10px;
+}
+
+
+/* 
+.homeContent {
+  text-align: center;
+}
+.homeContent p {
+  color: lightslategray;
+} */
+.jumbo span {
+  font-size: 18px;
+}
+
+.jumbo h1 {
+  color: white;
+}
+
+.cari {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 50px 0px 0px 50px;
+  width: 40%;
+  height: 15px;
+  font-size: larger;
+}
+
+.poto {
+  width: 80%;
+  margin: auto;
+}
+
+.poto img {
+  border-radius: 10px;
+}
+
+/*end css home */
+
+.width-250p {
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+  margin: 15px;
+}
+
+.width-100 {
+  width: 100%;
+  background-color: darkkhaki;
+}
+
+.width-50 {
+  width: 50%;
+  background-color: darkkhaki;
+}
+
+.work {
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+  height: 150px;
+  background-color: black;
+}

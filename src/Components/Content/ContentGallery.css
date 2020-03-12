@@ -1,0 +1,80 @@
+.gallery {
+  /* display: grid; */
+  /* flex: 20%; */
+  /* padding: 0 4px; */
+  width: 350px;
+  height: 350px;
+  margin: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.gallery img {
+  /* margin-top: 8px; */
+  /* vertical-align: middle; */
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+}
+
+.overlay {
+  color: white;
+  text-align: left;
+  display: block;
+
+  /* margin-top: -50px; */
+  /* margin-left: -300px; */
+  position: absolute;
+  bottom: 1.2em;
+  align-items: baseline;
+  opacity: 1;
+}
+
+.isi {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  /* flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  padding: 10px;
+  width: 80%;
+  /* margin: auto; */
+  vertical-align: top;
+}
+
+.wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px;
+  width: 100%;
+}
+
+/* 
+.sidebar {
+  display: block;
+  background-color: hotpink;
+  width: 40%;
+  margin-right: 10px;
+} */
+
+.root {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  justify-content: 'space-around';
+}
+
+.gridList {
+  width: 500;
+  height: 450;
+  overflow-y: auto;
+}
