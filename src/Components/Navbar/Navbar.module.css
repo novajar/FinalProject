@@ -171,3 +171,13 @@ li {
   font-weight: 700;
   font-size: 1em;
 }
+
+.cart {
+  display: flex;
+  justify-content: 'space-between'
+
+}
+
+.cartList {
+  padding: 10px;
+}

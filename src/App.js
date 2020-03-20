@@ -20,22 +20,22 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {
-          title: '',
-          nocard: true,
-          content: 'test konten1',
-          theme: 4,
-          className: 'gambar'
-        },
-        {
-          title: '',
-          nocard: true,
-          content: 'test konten1',
-          theme: 4,
-          className: 'gambar'
-        }
-      ],
+      // data: [
+      //   {
+      //     title: '',
+      //     nocard: true,
+      //     content: 'test konten1',
+      //     theme: 4,
+      //     className: 'gambar'
+      //   },
+      //   {
+      //     title: '',
+      //     nocard: true,
+      //     content: 'test konten1',
+      //     theme: 4,
+      //     className: 'gambar'
+      //   }
+      // ],
       home: {
         footer: 'Start Selling Your Photos Today. View plans and pricing',
         data: [
@@ -138,24 +138,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-function Works({ data }) {
-  return (
-    <div className="Container-W">
-      <ArrayMap data={data}>
-        {({ title, className, nocard, content, theme }) => (
-          <Content
-            title={title}
-            showList={nocard}
-            className={className}
-            theme={theme}
-            content={content}
-          />
-        )}
-      </ArrayMap>
-    </div>
-  );
 }
 
 function Gallery({ data }) {

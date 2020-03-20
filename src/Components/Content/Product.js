@@ -25,6 +25,7 @@ class Product extends Component {
         qty: 1,
         idCart: 0
       },
+      defaultQty: 1,
       id: 0,
       path: ''
     };
@@ -76,7 +77,8 @@ class Product extends Component {
       isiCart: {
         ...this.state.isiCart,
         qty: value
-      }
+      },
+      defaultQty: this.state.defaultQty + 1
     });
   }
   onClick(value) {
@@ -93,7 +95,8 @@ class Product extends Component {
       isiCart: {
         ...this.state.isiCart,
         idCart: this.state.isiCart.idCart + 1
-      }
+      },
+      defaultQty: 1
     });
     this.props.fetchMoreCart(this.props.detail, this.state.isiCart);
   }
@@ -109,6 +112,7 @@ class Product extends Component {
 
   render() {
     // let pathID = window.location.pathname.split('/')[2];
+
     let cartID = 3;
     const {
       poto,
@@ -118,7 +122,7 @@ class Product extends Component {
       fetchMoreCart,
       filterPhotoById
     } = this.props;
-    const { isiCart } = this.state;
+    const { defaultQty } = this.state;
     // console.log('render', this.state.path);
     // if (id) {
     //   return <Redirect to={`/product/${id}`} />;
@@ -150,23 +154,14 @@ class Product extends Component {
                 <InputNumber
                   min={1}
                   max={10}
-                  defaultValue={1}
+                  defaultValue={defaultQty}
+                  value={defaultQty}
                   onChange={this.onChange}
                 />
                 <Button
                   type="primary"
                   shape="round"
                   size="large"
-                  // onClick={() => {
-                  //   this.setState({
-                  //     ...this.state,
-                  //     isiCart: {
-                  //       ...this.state.isiCart,
-                  //       idCart: this.state.isiCart.idCart + 1
-                  //     }
-                  //   });
-                  //   fetchMoreCart(detail, isiCart);
-                  // }}
                   onClick={this.onClick}
                 >
                   Add to Cart
